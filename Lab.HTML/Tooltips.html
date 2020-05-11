@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Tooltips คือ กล่องข้อความ สำหรับอธิบายรายละเอียดของข้อความ ที่มีขนาดสั้นหรือคลุมเครือยากต่อความเข้าใจ เป็นการซ้อนไว้ต้องนำเมาส์ไปชี้ถึงแสดง
+    ข้อความได้
+    </p> 
+    <br>
+    <p>ตัวอย่าง</p>
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color:#009688;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          top: -30px;
+          
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+        </style>
+        <div class="tooltip">Hover over me
+            <span class="tooltiptext">Tooltip text</span>
+        </div>
+</body>
+</html>
